@@ -1,7 +1,9 @@
 ### Changes MAC address
 
 sudo ifconfig wlan0 down
+
 sudo ifconfig wlan0 hw ether xx:xx:xx:xx:xx:xx
+
 sudo ifconfig wlan0 up
 
 *************************************************
