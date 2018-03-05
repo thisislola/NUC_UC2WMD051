@@ -17,6 +17,7 @@ airmon-ng
 ### Start airmon-ng by killing the processes in the background. Then use the command to start monitor mode on wlan0 (if that is the wcard you got from the first command)
 
 airmon-ng check kill 
+
 airmon-ng start wlan0 
 
 *************************************************
@@ -42,7 +43,9 @@ aireplay-ng --deauth 2000
 ### To stop and bring back the network adapter in managed mode (aka 'to see the wireless back')
 
 airmon-ng stop wlan0mon
+
 service networking restart
+
 service network-manager restart
 
 *************************************************
